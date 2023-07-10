@@ -4,7 +4,10 @@ const Projects = () => {
 
     return (
         <div id="projects">
-            <span>
+            <div id="project_filter">
+                All | Professional
+            </div>
+            <div id="all_project_list">
                 Everyday Sounds - web-based 16 step beat sequencer <br/><br/>
 
                 Pancake Cooking Simulator VR Edition - virtual kitchen environment that teaches players how to make pancakes <br/><br/>
@@ -21,8 +24,12 @@ const Projects = () => {
                 twitter - audience sharing <br/>
                 annetta/managirr - mvp design <br/>
                 youtube - youtube live <br/>
-                google - chrome new tab page <br/>
-            </span>
+                google - chrome new tab page <br/> <br/>
+
+                Clients <br/> <br/>
+
+                2ofaKind Vending 
+            </div>
         </div>
     )
 }

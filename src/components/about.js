@@ -5,24 +5,22 @@ const About = () => {
     return (
         <div id="about">
             <h1>
-                Hey I'm Lord. I'm an African American male born and raised in New York City. I like to create a lot of random things 
-                including this website which lives as a space for my projects, thoughts, and past lives. I hope it 
-                serves as an inspiration for anyone reading this to also create a space for your thoughts to live.
-            </h1> <br></br>
-            <span>
-                In my professional life, I'm a Product Manager at the New York Times. Ironically enough, 
-                I don't have much writing to show but this is changing :D. At the Times, I work closely
-                with Advertising, Games (think wordle, crossword, spelling bee), and the Cooking App.
-                <br/><br/>
+                Hey, I'm Lord. I'm an African American born and raised in New York City. <br/><br/> 
 
-                I love to tinker with websites, sketch (ink/charcoal mostly), produce music, and any random
-                design projects that come up. Feel free to click around and get lost in my creations.<br/><br/>
+                I've been titled many things — a product manager, programmer, designer, analyst,
+                 artist, etc. At my core, I'd say a creative architect and student of the world. 
+                <br/><br/> 
 
-                Email: lordcrawford2@gmail.com <br/><br/>
+                Currently, I'm a Product Manager at The New York Times. In 2022, I graduated from 
+                Columbia University with a degree in Computer Science and focus on Human-Computer Interaction.
+                <br/><br/> 
 
-                Past Lives: <br/><br/>
+                My speciality lies in product management, product consulting, creative web design & development, and
+                human-centered design. Outside of this, I can build 3D AR & VR applications, draw using charcoal,
+                ink, and pencil mediums, and produce electronic music.
 
-                Companies: <br/><br/>
+                {/* put my past lives stuff
+                    Companies: <br/><br/>
                 <ul>
                     <li>Twitter - Associate Product Manager, got laid off but worked on some cool things and met some even cooler people</li>
                     <li>Twitter - Product Manager Intern, back in ads :D</li>
@@ -38,8 +36,12 @@ const About = () => {
                     <li>APE - Another Planet Entertainment, ushered/volunteered concerts in the Bay Area... Yaeji, 100 gecs, Bryson Tiller, etc.</li>
                     <li>&Design - Design Fellow, cool fellowship founded by some incredible design leaders</li>
                 </ul> <br/><br/>
+                */}
+                <br/><br/><br/>
 
-            </span>
+                for consulting and personal matters: lordcrawford2@gmail.com 
+                <br/><br/>
+            </h1>
             
         </div>
     )

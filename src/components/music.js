@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Writing = () => {
+const Music = () => {
 
     return (
-        <div id="writing">
+        <div id="music">
             <h1>coming Soon.</h1>
         </div>
     )
 }
 
-export default Writing
+export default Music
