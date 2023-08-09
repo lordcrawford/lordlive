@@ -5,9 +5,7 @@ const About = () => {
     return (
         <div id="about">
             <h1>
-                Hey, I'm Lord. I'm an African American born and raised in New York City. <br/><br/> 
-
-                I've been titled many things — a product manager, programmer, designer, analyst,
+                Hey, I'm Lord. I'm an African American born and raised in New York City. I've been titled many things — a product manager, programmer, designer, analyst,
                  artist, etc. At my core, I'd say a creative architect and student of the world. 
                 <br/><br/> 
 

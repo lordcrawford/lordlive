@@ -19,7 +19,7 @@ const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingC
 
     return (
         <div className="bg-white float-left h-screen w-7/12 overflow-y-scroll" id="leftpanel">
-            <h1 id="name" className="text-8xl">Lord<br></br> Crawford</h1>
+            <h1 id="name" className="text-8xl cursor-pointer w-1/2" onClick={pageRefresh}>Lord<br></br> Crawford</h1>
             <div id="content">
                 {isAboutClicked ? <About/> : null}
                 {isProjectsClicked ? <Projects/> : null}
@@ -28,19 +28,17 @@ const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingC
                 {isMusicClicked ? <Music/> : null}
             </div>
             {isPageSpaceClicked() 
-                ? <button className="bg-transparent hover:bg-blue-400 hover:text-white 
-                py-2 px-2 border border-black hover:border-transparent rounded" 
-                id="home_button" onClick={pageRefresh}>Back Home</button>
+                ? null
                 : 
                 <div>
                     <div id="summary">
                         multi-disciplinary creation<br/>
                         current work: lord.live<br/> <br/>
-                        Based in New York City <br/><br/>
-                    </div>
-                    <span id="quote"><i>I created this website to serve as a space for my ideas 
+                        Based in New York City<br/><br/>
+                        <div id="quote"><i>I created this website to serve as a space for my ideas 
                         and passions to intermingle. I hope it inspires others to create a space for 
-                        their thoughts to live. </i> </span>
+                        their thoughts to live. </i> </div>
+                    </div>
                 </div>
             }
 

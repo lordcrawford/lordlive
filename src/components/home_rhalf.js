@@ -4,8 +4,6 @@ import ContentSpace from './content_space.js'
 import MagmaAnimation from "./animations/animation1.js";
 import ColorCircles from "./animations/animation2.js";
 
-import { useNavigate } from "react-router-dom";
-
 var colorSet = ["bg-orange-700", "bg-lime-300" , "bg-yellow-700", "bg-indigo-800", "bg-fuchsia-500", 
                 "bg-pink-600", "bg-cyan-300", "bg-amber-200" , "bg-emerald-500",
                 "bg-violet-600", "bg-pink-100", "bg-lime-900", "bg-emerald-100", "bg-sky-600"]
@@ -16,7 +14,7 @@ const RightPanel = ({onAboutClick , onProjectsClick, onArtClick, onWritingClick,
   
     return (
         <div className="float-right flex flex-wrap h-screen w-5/12" id="rightpanel">
-            <PageSpace color={colorSet[0]} pagename="about" handleClick={onAboutClick}/> 
+            <PageSpace color={colorSet[0]} pagename="about" handleClick={onAboutClick} id="about_space"/> 
             <ContentSpace color={colorSet[1]}/>
             <ContentSpace color={colorSet[2]}/>
             <PageSpace color={colorSet[3]} pagename="projects" handleClick={onProjectsClick}/>
@@ -40,6 +38,4 @@ const RightPanel = ({onAboutClick , onProjectsClick, onArtClick, onWritingClick,
 }
   
 
-
-  
 export default RightPanel

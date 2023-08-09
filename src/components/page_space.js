@@ -12,11 +12,11 @@ class PageSpace extends React.Component {
             e.target.firstChild.style.color = 'white';
         }
         
-        const class_name = "w-1/3 h-1/5 " + this.props.color + " " + this.props.pagename;
+        const class_name = "w-1/3 h-1/5 " + this.props.color + " " + this.props.pagename + " space";
         
         return (
             <div className={class_name} onClick={this.props.handleClick} 
-            onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut} id="space">
+            onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut}>
                 <span className="page_text">{this.props.pagename}</span>
             </div>
         )

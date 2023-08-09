@@ -25,11 +25,12 @@
 }
 
 #summary{
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     left: 2%;
     font-size:1.8vw;
     font-weight: 300;
+    width: 50%;
 }
 
 #content{
@@ -40,8 +41,13 @@
 }
 
 #home_button{
-    position: absolute;
+    position: fixed;
     bottom: 3%;
     right: 43%;
+}
+
+#quote{
+    font-size: 1.3vw;
+    padding-top: 2%;
 }
   
