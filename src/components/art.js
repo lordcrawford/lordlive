@@ -4,7 +4,10 @@ const Art = () => {
 
     return (
         <div id="art">
-            <h1>hey im lordie, this is my art</h1>
+            <div id="selector">all | charcoal | ink | graphite</div>
+            <div id="images">
+                <img src={'./art4website/deepest_corner.jpeg'} alt="Deepest Corner" />
+            </div>
         </div>
     )
 }

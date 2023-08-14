@@ -6,10 +6,6 @@ import {
 } from "react-router-dom";
 
 import Home from './components/home.js';
-// import About from './components/about.js';
-// import Art from './components/art.js';
-// import Writing from './components/writing.js';
-// import Projects from './components/projects.js';
 
 
 function App() {

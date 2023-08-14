@@ -35,9 +35,9 @@ const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingC
                         multi-disciplinary creation<br/>
                         current work: lord.live<br/> <br/>
                         Based in New York City<br/><br/>
-                        <div id="quote"><i>I created this website to serve as a space for my ideas 
-                        and passions to intermingle. I hope it inspires others to create a space for 
-                        their thoughts to live. </i> </div>
+                        <div id="quote">I created this website to serve as a space for my ideas 
+                        and passions to intermingle. <br/> I hope it inspires others to create a space for 
+                        their dreams to live.</div>
                     </div>
                 </div>
             }

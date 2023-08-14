@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=MuseoModerno:wght@100;300;400&display=swap');
+
 .page_text {
     text-align: right;
     position: absolute;
     bottom: 7px;
     right: 12px;
     color: white;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     pointer-events: none;
     font-weight: 300;
+    font-family: 'MuseoModerno', cursive;
   }
 
 .space {
