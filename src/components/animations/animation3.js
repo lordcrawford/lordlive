@@ -15,7 +15,7 @@ const StarfieldAnimation = () => {
 
       star.style.left = `${Math.random() * 100}%`;
       star.style.top = `${Math.random() * 100}%`;
-      star.style.animationDuration = `${Math.random() * 5 + 80}s`;
+      star.style.animationDuration = `${Math.random() * 5 + 50}s`;
       star.style.animationDelay = `${Math.random() * 50}s`;
       container.appendChild(star);
     }
@@ -39,8 +39,8 @@ const StarfieldAnimation = () => {
 
           .star {
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 15%;
+            height: 15%;
             animation: moveStar 5s linear infinite, twinkle 1s linear infinite;
             background-color: transparent;
           }

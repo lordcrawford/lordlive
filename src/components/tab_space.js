@@ -2,7 +2,7 @@ import React from 'react'
 import './space.css';
 
 
-class PageSpace extends React.Component {
+class TabSpace extends React.Component {
     render (){
         function handleMouseOver(e) {
             e.target.firstChild.style.color = 'black';
@@ -24,4 +24,4 @@ class PageSpace extends React.Component {
     
 }
 
-export default PageSpace
+export default TabSpace

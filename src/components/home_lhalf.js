@@ -1,10 +1,10 @@
 import React from 'react'
 import './home.css';
-import About from "./about.js"
-import Projects from "./projects.js"
-import Art from "./art.js"
-import Writing from "./writing.js"
-import Music from "./music.js"
+import About from "./tabs/about.js"
+import Projects from "./tabs/projects.js"
+import Art from "./tabs/art.js"
+import Writing from "./tabs/writing.js"
+import Music from "./tabs/music.js"
 
 const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingClicked, isMusicClicked}) => {
 
