@@ -4,7 +4,7 @@ const Writing = () => {
 
     return (
         <div id="writing">
-            <h1>Coming Soon</h1>
+            <h1 className="text-[1.5vw]">Coming Soon ✍🏾</h1>
         </div>
     )
 }

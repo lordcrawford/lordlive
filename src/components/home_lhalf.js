@@ -18,7 +18,7 @@ const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingC
     const pageRefresh = () => window.location.reload(true)
 
     return (
-        <div className="bg-white float-left h-screen w-7/12 overflow-y-scroll" id="leftpanel">
+        <div className="bg-white float-left h-screen overflow-y-scroll" id="leftpanel">
             <h1 id="name" className="text-8xl cursor-pointer w-1/2" onClick={pageRefresh}>Lord<br></br> Crawford</h1>
             <div id="content">
                 {isAboutClicked ? <About/> : null}
@@ -35,9 +35,6 @@ const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingC
                         multi-disciplinary creation<br/>
                         current work: lord.live<br/> <br/>
                         Based in New York City<br/><br/>
-                        <div id="quote">I created this website to serve as a space for my ideas 
-                        and passions to intermingle. <br/> I hope it inspires others to create a space for 
-                        their dreams to live.</div>
                     </div>
                 </div>
             }
