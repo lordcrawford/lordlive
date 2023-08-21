@@ -51,7 +51,7 @@ const Projects = () => {
                 transition transform hover:skew-y-1 hover:border-l-8 hover:bg-yellow-100">
                     <div className="title self-center w-2/5 pr-2">A Post a Day Keeps the Doctor Away</div>
                     <div className="description self-center w-3/5 pl-3"> Human-Computer Interaction paper analyzing the factors 
-                        that affect people’s willingness to share personal info on online self-diagnosis platforms</div>
+                        affecting people’s willingness to share personal info on online self-diagnosis platforms</div>
                 </div>
                 
             </div>
