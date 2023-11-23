@@ -20,7 +20,7 @@ const LeftPanel = ({isAboutClicked , isProjectsClicked, isArtClicked, isWritingC
     return (
         <div className="bg-white float-left h-screen overflow-y-scroll" id="leftpanel">
             <h1 id="name" className="text-8xl cursor-pointer w-1/2" onClick={pageRefresh}>Lord<br></br> Crawford</h1>
-            <div id="content">
+            <div id="content" className='grid'>
                 {isAboutClicked ? <About/> : null}
                 {isProjectsClicked ? <Projects/> : null}
                 {isArtClicked ? <Art/> : null}

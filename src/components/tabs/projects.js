@@ -21,13 +21,13 @@ const Projects = () => {
                 onClick={(e) => goToLink('https://www.marketingdive.com/news/new-york-times-wordle-new-mobile-ad-format-doordash/685073/')}>
                     <div className="title self-center w-2/5 pr-2">Wordle Mobile Ad</div>
                     <div className="description self-center w-3/5 pl-3"> Supported the launch of a full-screen interstitial
-                    advertisement on The New York Times' Wordle game</div>
+                    advertisement on The New York Times' Wordle mobile web game</div>
                 </div>
 
                 <div className="project flex flex-row h-24 border-b-2 border-l-2 pl-4 border-black 
                 transition transform hover:skew-y-1 hover:border-l-8 hover:bg-green-100">
                     <div className="title self-center w-2/5 pr-2">2ofAKind Vending</div>
-                    <div className="description self-center w-3/5 pl-3"> Fully designed and built website 
+                    <div className="description self-center w-3/5 pl-3"> Fully designed and built a website 
                     for a vending machine business</div>
                 </div>
 
