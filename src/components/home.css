@@ -1,4 +1,4 @@
-#home{
+#home, #about, #art, #projects, #music, #writing{
     position: fixed;
     display:flex;
     width: 100%;
@@ -18,11 +18,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=MuseoModerno:wght@100;200;300;400&display=swap');
 
 #name{
-    padding-left: 3.5%;
-    padding-top: 4%;
-    font-size:7vw;
     font-weight: 200;
     color: black;
+    font-family: 'MuseoModerno', cursive;
+}
+
+div{
     font-family: 'MuseoModerno', cursive;
 }
 

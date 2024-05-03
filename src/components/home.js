@@ -1,63 +1,26 @@
 import React, { useState } from 'react';
-import LeftPanel from "./home_lhalf";
 import RightPanel from "./home_rhalf";
 import './home.css';
 
 
 const Home = () => {
 
-    const [isAboutClicked, setIsAboutClicked] = useState(false);
-    const [isProjectsClicked, setIsProjectsClicked] = useState(false);
-    const [isArtClicked, setIsArtClicked] = useState(false);
-    const [isMusicClicked, setIsMusicClicked] = useState(false);
-    const [isWritingClicked, setIsWritingClicked] = useState(false);
-
-    const handleAboutClick = () => {
-        setIsAboutClicked(true);
-        setIsProjectsClicked(false);
-        setIsMusicClicked(false);
-        setIsWritingClicked(false);
-        setIsArtClicked(false);
-    };
-
-    const handleProjectsClick = () => {
-        setIsProjectsClicked(true);
-        setIsAboutClicked(false);
-        setIsMusicClicked(false);
-        setIsWritingClicked(false);
-        setIsArtClicked(false);
-    };
-
-    const handleArtClick = () => {
-        setIsArtClicked(true);
-        setIsProjectsClicked(false);
-        setIsMusicClicked(false);
-        setIsWritingClicked(false);
-        setIsAboutClicked(false);
-    };
-
-    const handleMusicClick = () => {
-        setIsMusicClicked(true);
-        setIsProjectsClicked(false);
-        setIsAboutClicked(false);
-        setIsWritingClicked(false);
-        setIsArtClicked(false);
-    };
-
-    const handleWritingClick = () => {
-        setIsWritingClicked(true);
-        setIsProjectsClicked(false);
-        setIsMusicClicked(false);
-        setIsAboutClicked(false);
-        setIsArtClicked(false);
-    };
-
     return (
         <div id="home">
-            <LeftPanel isAboutClicked={isAboutClicked} isProjectsClicked={isProjectsClicked} 
-                isArtClicked={isArtClicked} isWritingClicked={isWritingClicked} isMusicClicked={isMusicClicked}/>
-            <RightPanel onAboutClick={handleAboutClick} onProjectsClick={handleProjectsClick}
-                onArtClick={handleArtClick} onMusicClick={handleMusicClick} onWritingClick={handleWritingClick}/>
+            <div className="bg-white float-left h-screen overflow-y-scroll" id="leftpanel">
+                <h1 id="name" className="text-8xl cursor-pointer w-1/2 pl-[3.5%] pt-[4%]" >Lord<br></br> Crawford</h1>
+                <div>
+                    <div>
+                        <div id="summary">
+                            multi-disciplinary creation<br/>
+                            current work: everyday sounds<br/> <br/>
+                            Based in New York City<br/><br/>
+                        </div>
+                        {/* <img id="figure" className ="float-right w-[17%]" src={require('./photos/figure.gif')} alt="Figure" /> */}
+                    </div>
+                </div>
+            </div>
+            <RightPanel/>
         </div>
     )
 }
