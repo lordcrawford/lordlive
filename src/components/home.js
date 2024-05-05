@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import RightPanel from "./home_rhalf";
 import './home.css';
 
