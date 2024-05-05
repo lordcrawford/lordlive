@@ -17,13 +17,17 @@ const About = () => {
                 <div id="name" className="text-[4vw] cursor-pointer ml-[3.5%] mt-[2%] space-y-[-2vw]" onClick={() => goHome()}><div>Lord</div><div>Crawford</div></div>
                 <div className="text-[3.5vw] md:text-[1.2vw] mt-[10%] w-[75%] justify-self-center font-light">
                     
-                    Hi! I'm Lord. I'm born and raised in New York City. I've been titled many things but at my core, I'm a product manager and creative technologist. I created this website as a space for my thoughts and passions to intermingle, 
+                    Hi! I'm Lord, born and raised in New York City where I currently reside. I've been titled many things but at my core, I'm a product manager and 
+                    creative technologist. I created this website as a digital space for my thoughts and passions to intermingle, 
                     I hope it inspires others to do the same.
 
                     <br/> <br/>
 
-                    Currently, I'm a Product Manager at The New York Times leading the advertising experience on NYT Games (Wordle, Connections, etc.) and NYT Cooking.
-                    In 2022, I graduated from Columbia University with a degree in Computer Science and focus on Human-Computer Interaction. Most recently, I completed
+                    Currently, I'm a Product Manager at The New York Times leading the advertising experience on NYT Games (Wordle, Connections, etc.) and NYT Cooking. 
+                    Prior to this, I was a Product Manager at Twitter/X (contributing to both Ads and Localization/Translation teams), interned at Google as a Software Engineer,
+                    and was the first product lead of a real estate startup. 
+                    
+                    In terms of my academic journey, I graduated from Columbia University with a degree in Computer Science and focus on Human-Computer Interaction. More recently, I completed
                     the Product Design Certificate Program at Pratt Institute.
 
                     <br/><br/> 
@@ -33,8 +37,10 @@ const About = () => {
                     ink, and pencil mediums, and produce electronic music.
 
                     <br/><br/>
+                    <hr></hr>
+                    <br></br>
 
-                    <span className="font-black">for consulting and personal matters: </span><a className="underline decoration-blue-500 decoration-2" href="mailto:lordcrawford2@gmail.com">lordcrawford2@gmail.com</a>
+                    <span className="font-black">Consulting and Personal: </span><a className="underline decoration-blue-500 decoration-2" href="mailto:lordcrawford2@gmail.com">lordcrawford2@gmail.com</a>
 
                 </div> 
                 <div className='md:flex md:flex-row md:space-x-[10%] justify-self-center items-center place-content-center mx-[10%] my-[6%]'>
