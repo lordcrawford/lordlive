@@ -27,7 +27,7 @@ const Projects = () => {
                         <div className="description self-center w-3/5 pl-3 font-[400]">[Work In Progress] Web-based beat maker</div>
                     </div>
                     <div className="project cursor-pointer flex flex-row h-24 border-b-2 border-l-2 pl-4 border-black 
-                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-sky-300" onClick={() => goHome()}>
+                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-sky-200" onClick={() => goHome()}>
                         <div className="title self-center w-2/5 pr-2">lord.live</div>
                         <div className="description self-center w-3/5 pl-3 font-[400]">Programmed this website from scratch using React</div>
                     </div>
@@ -41,7 +41,7 @@ const Projects = () => {
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-24 border-b-2 border-l-2 pl-4 border-black 
-                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-purple-100"
+                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-emerald-100"
                     onClick={(e) => goToLink('https://www.marketingdive.com/news/new-york-times-wordle-new-mobile-ad-format-doordash/685073/')}>
                         <div className="title self-center w-2/5 pr-2">Wordle Mobile Ad</div>
                         <div className="description self-center w-3/5 pl-3 font-[400]"> Supported the launch of a full-screen interstitial
