@@ -1,5 +1,7 @@
 import RightPanel from "./righthalf/right_half.js";
 import './home.css';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 const Home = () => {
@@ -20,6 +22,8 @@ const Home = () => {
                 </div>
             </div>
             <RightPanel/>
+            <Analytics/>
+            <SpeedInsights/>
         </div>
     )
 }

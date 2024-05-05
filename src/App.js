@@ -26,8 +26,6 @@ function App() {
         <Route path="/writing" exact element={<Writing/>}/>
         <Route path="/*" exact element={<Home/>}/>
       </Routes>
-      <Analytics/>
-      <SpeedInsights/>
     </Router>
   );
 }
