@@ -11,6 +11,9 @@ import Projects from './components/tabs/projects.js';
 import Writing from './components/tabs/writing.js';
 import Music from './components/tabs/music.js';
 
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
@@ -23,6 +26,8 @@ function App() {
         <Route path="/writing" exact element={<Writing/>}/>
         <Route path="/*" exact element={<Home/>}/>
       </Routes>
+      <Analytics/>
+      <SpeedInsights/>
     </Router>
   );
 }
