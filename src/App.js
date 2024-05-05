@@ -13,14 +13,15 @@ import Music from './components/tabs/music.js';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/art" element={<Art/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/music" element={<Music/>}/>
-        <Route path="/writing" element={<Writing/>}/>
+        <Route path="/" exact element={<Home/>}/>
+        <Route path="/about" exact element={<About/>}/>
+        <Route path="/art" exact element={<Art/>}/>
+        <Route path="/projects" exact element={<Projects/>}/>
+        <Route path="/music" exact element={<Music/>}/>
+        <Route path="/writing" exact element={<Writing/>}/>
+        <Route path="/*" exact element={<Home/>}/>
       </Routes>
     </Router>
   );
