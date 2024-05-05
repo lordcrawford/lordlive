@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 import TabSpace from './tab_space.js'
 import ContentSpace from './content_space.js'
-import MagmaAnimation from "./animations/animation1.js";
-import ColorCircles from "./animations/animation2.js";
-import StarfieldAnimation from "./animations/animation3.js"
-import './home.css';
+import MagmaAnimation from "../animations/animation1.js";
+import ColorCircles from "../animations/animation2.js";
+import StarfieldAnimation from "../animations/animation3.js"
+import '../home.css';
 
 var colorSet = ["#4A5AED", "#FFC701" , "#C8FF2B", "#C31E46", "#A66C15", 
                 "#4800A4", "#56FF85", "#FF3D00" , "#E37575",

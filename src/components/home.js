@@ -1,4 +1,4 @@
-import RightPanel from "./home_rhalf";
+import RightPanel from "./righthalf/right_half.js";
 import './home.css';
 
 

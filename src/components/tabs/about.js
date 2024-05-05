@@ -1,5 +1,5 @@
 import React from 'react'
-import RightPanel from "../home_rhalf";
+import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
 
