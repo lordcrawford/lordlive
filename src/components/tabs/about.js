@@ -38,8 +38,8 @@ const About = () => {
 
                 </div> 
                 <div className='md:flex md:flex-row md:space-x-[10%] justify-self-center items-center place-content-center mx-[10%] my-[6%]'>
-                    <img className="md:w-1/3 h-auto  object-cover" src={require('../photos/about_pic.jpeg')} alt="Bio"/>
-                    <img className="md:w-1/3 h-auto  object-cover md:mt-0 mt-[8%]" src={require('../photos/about_pic2.jpg')} alt="Bio"/>
+                    <img className="md:w-[40%] h-auto  object-cover" src={require('../photos/about_pic.jpeg')} alt="Bio"/>
+                    <img className="md:w-[40%] h-auto  object-cover md:mt-0 mt-[8%]" src={require('../photos/about_pic2.jpg')} alt="Bio"/>
                 </div>
             </div>
             <RightPanel/>
