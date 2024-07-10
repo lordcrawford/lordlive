@@ -14,7 +14,7 @@ const EverydaySounds = () => {
 
     useEffect(() => {
         function alternateColors () {
-            const title = document.getElementsByTagName("h1")[0];
+            const title = document.getElementById("es_title");
     
             setTimeout(() => {
                 const random1 = Math.floor(Math.random() * 255);
@@ -34,7 +34,7 @@ const EverydaySounds = () => {
                 <hr className='mt-[2vw] mx-[2vw] border-black border-[1px]'/>
                 <div className=' ml-[3.5%] pb-[3vw]'>
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
-                        <h1 className="text-[9vw] md:text-[3.5vw] font-extralight self-center text-emerald-500">Everyday Sounds</h1>
+                        <h1 id="es_title"className="text-[9vw] md:text-[3.5vw] font-extralight self-center text-emerald-500">Everyday Sounds</h1>
                         <a href="https://www.everydaysounds.live" class="mt-[2vw] md:mt-0 mr-[5%] bg-cyan-400 p-[1.5%] h-min 
                         text-white self-center hover:bg-cyan-500 text-center">Visit Live Project &rarr;</a>
                     </div>
