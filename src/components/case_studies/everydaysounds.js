@@ -36,7 +36,7 @@ const EverydaySounds = () => {
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
                         <h1 className="text-[9vw] md:text-[3.5vw] font-extralight self-center text-emerald-500">Everyday Sounds</h1>
                         <a href="https://www.everydaysounds.live" class="mt-[2vw] md:mt-0 mr-[5%] bg-cyan-400 p-[1.5%] h-min 
-                        text-white self-center hover:bg-cyan-500 text-center">Visit Live Project =></a>
+                        text-white self-center hover:bg-cyan-500 text-center">Visit Live Project &rarr;</a>
                     </div>
                     <div className='bg-orange-700 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Summary</p>
