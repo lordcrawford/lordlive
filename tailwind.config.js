@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        museomoderno: ["MuseoModerno", "sans-serif"],
+        limelight: ["Limelight", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

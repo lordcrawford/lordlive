@@ -11,6 +11,8 @@ import Projects from './components/tabs/projects.js';
 import Writing from './components/tabs/writing.js';
 import Music from './components/tabs/music.js';
 
+import EverydaySounds from './components/case_studies/everydaysounds.js';
+
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
@@ -21,6 +23,10 @@ function App() {
         <Route path="/projects" exact element={<Projects/>}/>
         <Route path="/music" exact element={<Music/>}/>
         <Route path="/writing" exact element={<Writing/>}/>
+
+        <Route path="/everydaysounds" exact element={<EverydaySounds/>}/>
+
+
         <Route path="/*" exact element={<Home/>}/>
       </Routes>
     </Router>
