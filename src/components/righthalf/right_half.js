@@ -45,19 +45,19 @@ const RightPanel = () => {
             <TabSpace color={colorSet[3]} pagename="projects" handleClick={() => goToProjects()}/>
             <ContentSpace color={colorSet[4]}/>
             <ContentSpace color={colorSet[5]}/>
-            <TabSpace color={colorSet[6]} pagename="art" handleClick={() => goToArt()}/>
+            <TabSpace color={colorSet[14]} pagename="art" handleClick={() => goToArt()}/>
             <ContentSpace color={colorSet[7]}/>
             <ContentSpace color={colorSet[8]}>
                 <ColorCircles/>
             </ContentSpace>
-            <TabSpace color={colorSet[9]} pagename="writing" handleClick={() => goToWriting()}/>
+            <TabSpace color={colorSet[6]} pagename="writing" handleClick={() => goToWriting()}/>
             <ContentSpace color={colorSet[10]}/>
             <ContentSpace color={colorSet[11]}/>
             <TabSpace color={colorSet[12]} pagename="music" handleClick={() => goToMusic()}/>
             <ContentSpace color={colorSet[13]}>
                 <MagmaAnimation/>
             </ContentSpace>
-            <ContentSpace color={colorSet[14]}/>
+            <ContentSpace color={colorSet[9]}/>
         </div>
     )
 }

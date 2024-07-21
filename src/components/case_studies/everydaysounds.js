@@ -34,11 +34,11 @@ const EverydaySounds = () => {
                 <hr className='mt-[2vw] mx-[2vw] border-black border-[1px]'/>
                 <div className=' ml-[3.5%] pb-[3vw]'>
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
-                        <h1 id="es_title"className="text-[9vw] md:text-[3.5vw] font-extralight self-center text-emerald-500">Everyday Sounds</h1>
+                        <h1 id="es_title"className="text-[9vw] md:text-[3.5vw] font-limelight font-extralight self-center text-emerald-500">Everyday Sounds</h1>
                         <a href="https://www.everydaysounds.live" class="mt-[2vw] md:mt-0 mr-[5%] bg-cyan-400 p-[1.5%] h-min 
                         text-white self-center hover:bg-cyan-500 text-center">Visit Live Project &rarr;</a>
                     </div>
-                    <div className='bg-orange-700 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
+                    <div className='bg-orange-800 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Summary</p>
                         <p className='mt-[1vw] font-light text-[15px] text-stone-200'> This web-based beatmaker was developed by myself initially as a solo class project in 2022.
                             Everyday you go outside, you naturally create your own soundscape or 'world of sounds'; 
@@ -64,34 +64,56 @@ const EverydaySounds = () => {
                         
                     </div>
 
-                    <div className='bg-cyan-700 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
-                        <p className='text-[5vw] md:text-[2vw] font-normal'>v1 Design Process</p>
+                    <div className='bg-violet-700 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
+                        <p className='text-[5vw] md:text-[2vw] font-normal'>Ideation</p>
                         <p className='mt-[1vw] font-light text-[15px] text-stone-200'> 
-                            <b className="text-[14pt]"><u>Ideation:</u></b><br/><br/>
-
                             During my senior spring semester at Columbia, I took a class called 
                             'History & Practice of Electronic Music' which taught me core elements of music production
                             and emerging audio technologies. For the final project, there was an
                             option to create a song and I thought it'd be fascinating to utilize my programming skills to 
-                            make a digital instrument that could make music. Throughout the class I had used Logic, 
-                            Ableton, and Audacity; I chose to similarly model the design of a step sequencer. <br/><br/>
+                            make a digital instrument that could make music.
+                        </p>
+                        
+                    </div>
 
+                    <div className='bg-red-800 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white flex flex-col'>
+                        <p className='text-[5vw] md:text-[2vw] font-normal'>Research</p>
+                        <p className='mt-[1vw] font-light text-[15px] text-stone-200 mb-[1vw]'> 
+                            In order to understand the landscape of DAWs (Digital Audio Workstation), I first invested
+                            hours creating music in Audacity which is a more rudimentary tool compared to Logic or 
+                            Ableton. It was here where I first learned how to apply audio tracks and create looped beats.
+                        </p>
+                        
+                        <p className='self-center text-[13px] text-stone-200 font-light'>Audacity</p>
+                        <img className="w-[90%] self-center md:w-[60%] ml-[1%] h-auto object-cover" src={require('../photos/everydaysounds/audacity_cs.png')} alt="lo-fi wireframe"/><br/>
 
-                            <b className="text-[14pt]"><u>v1 Everday Sounds - lo-fi wireframe:</u></b> <br/><br/>
+                        <p className='mt-[1vw] font-light text-[15px] text-stone-200 mb-[1vw]'> 
+                            Following Audacity, I learned how to use Ableton and Logic which is where I was introduced to more robust
+                            beat sequencers that could add thousands of effects on top of them. This was around the same time
+                            I got an AKAI MPK Mini (essentially a small physical drum pad that you can plug into your computer).
+                            These tools showed me a more advanced user experience around beatmaking with a sequencer, I aimed to
+                            create something it a bit simpler.
+                        </p>
+                    </div>
+
+                    <div className='bg-cyan-700 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
+                        <p className='text-[5vw] md:text-[2vw] font-normal'>v1 Everday Sounds - Design Process</p>
+                        <p className='mt-[1vw] font-light text-[15px] text-stone-200'> 
+                            <b className="text-[14pt]"><u>Low Fidelity Wireframe</u></b> <br/><br/>
 
                             <img className="w-[95%] md:w-[60%] ml-[2%] h-auto object-cover" src={require('../photos/everydaysounds/home.jpg')} alt="lo-fi wireframe"/><br/>
 
-                            <b className="text-[14pt]"><u>v1 Everday Sounds - first hi-fi:</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>High Fidelity Wireframe</u></b> <br/><br/>
 
                             <img className="w-[95%] md:w-[60%] ml-[2%] h-auto object-cover" src={require('../photos/everydaysounds/v1es.png')} alt="first hi-fi wireframe"/><br/>
 
-                            <b className="text-[14pt]"><u>v1 Everday Sounds - development:</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>Development</u></b> <br/><br/>
 
                             In this first round of development, I took the specs, colors and positions from
                             the above Figma wireframe to program it into a live website. For the web development,
                             I used HTML, CSS and Javascript, specifically manipulating HTML's Audio property.<br/><br/>
 
-                            <b className="text-[14pt]"><u>v1 Everday Sounds - end presentation (may 2022):</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>End Presentation (May 2022):</u></b> <br/><br/>
 
                             <video className='w-[95%] md:w-[80%] ml-[2%]' controls poster={require('../photos/everydaysounds/v1es.png')}>
                                 <source src={require('../photos/everydaysounds/presentation.mp4')} type="video/mp4"/>
@@ -101,16 +123,16 @@ const EverydaySounds = () => {
                     </div>
 
                     <div className='bg-fuchsia-800 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
-                        <p className='text-[5vw] md:text-[2vw] font-normal'>v2 Design Process</p>
+                        <p className='text-[5vw] md:text-[2vw] font-normal'>v2 Everday Sounds - Design Process</p>
                         <p className='mt-[1vw] font-light text-[15px] text-stone-200'> 
 
-                            <b className="text-[14pt]"><u>v2 Everday Sounds - revisiting an old project:</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>Revisiting an old project</u></b> <br/><br/>
 
                             Throughout 2023 into 2024, I continued producing music in my free time as a 
-                            fun past time. During this time I had also learned React... sparking an
+                            fun past time. During this time I had also learned React which sparked an
                             interest in revamping my old beatmaker project.<br/><br/>
 
-                            <b className="text-[14pt]"><u>v2 Everday Sounds - user interviews:</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>User Interviews</u></b> <br/><br/>
                             
                             Before diving back into redesigning my project, I wanted to understand what
                             people who interacted with commonly known DAWs (Digital Audio Workstations - 
@@ -124,7 +146,7 @@ const EverydaySounds = () => {
                             and About</i> sections, built in animation states, used clearer color schemes and 
                             stripped down some of the features.<br/><br/>
 
-                            <b className="text-[14pt]"><u>v2 Everday Sounds - hi-fis:</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>High Fidelity Wireframes</u></b> <br/><br/>
                             
                             <div className="flex flex-col">
                                 <p className="self-center mb-[1.5vw]">initial rounds</p>
@@ -137,7 +159,7 @@ const EverydaySounds = () => {
                             </div>
                             
 
-                            <b className="text-[14pt]"><u>v2 Everday Sounds - development:</u></b> <br/><br/>
+                            <b className="text-[14pt]"><u>Development:</u></b> <br/><br/>
 
                             In this next round of development, I once again took the specs from
                             the above Figma wireframe and programmed it into a live website. For the web development,
@@ -148,8 +170,8 @@ const EverydaySounds = () => {
                     </div>
 
                     <div className='bg-black border-black border-2 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
-                        <p className='text-[5vw] md:text-[2vw] font-normal'>Graphic Design</p>
-                        <p className='mt-[4vw] md:mt-[1vw] font-light text-[15px] text-stone-200'> 
+                        <p className='text-[5vw] md:text-[2vw] font-normal'>Graphic Design (v2)</p>
+                        <p className='mt-[4vw] md:mt-[2vw] font-light text-[15px] text-stone-200'> 
 
                             <b className="text-[14pt]"><u>Color</u></b> <br/><br/>
 
@@ -162,8 +184,10 @@ const EverydaySounds = () => {
 
                             <b className="text-[14pt]"><u>Typography</u></b> <br/><br/>
 
-                            <p className='font-limelight text-[23pt]'>Limelight</p><br/>
-                            <p className='text-[23pt]'>Museo Moderno</p><br/>
+                            <div className='flex flex-col md:flex-row'>
+                                <p className='font-limelight text-[21pt] mr-[5vw]'>Limelight</p>
+                                <p className='text-[21pt]'>Museo Moderno</p><br/>
+                            </div>
 
                         </p>
                         
