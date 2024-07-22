@@ -12,6 +12,7 @@ import Writing from './components/tabs/writing.js';
 import Music from './components/tabs/music.js';
 
 import EverydaySounds from './components/case_studies/everydaysounds.js';
+import VRCooking from './components/case_studies/vrcooking.js';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/writing" exact element={<Writing/>}/>
 
         <Route path="/everydaysounds" exact element={<EverydaySounds/>}/>
+        <Route path="/vrcooking" exact element={<VRCooking/>}/>
 
 
         <Route path="/*" exact element={<Home/>}/>

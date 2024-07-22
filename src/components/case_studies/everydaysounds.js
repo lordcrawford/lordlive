@@ -35,7 +35,7 @@ const EverydaySounds = () => {
                 <div className=' ml-[3.5%] pb-[3vw]'>
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
                         <h1 id="es_title"className="text-[9vw] md:text-[3.5vw] font-limelight font-extralight self-center text-emerald-500">Everyday Sounds</h1>
-                        <a href="https://www.everydaysounds.live" class="mt-[2vw] md:mt-0 mr-[5%] bg-cyan-400 p-[1.5%] h-min 
+                        <a href="https://www.everydaysounds.live" className="mt-[2vw] md:mt-0 mr-[5%] bg-cyan-400 p-[1.5%] h-min 
                         text-white self-center hover:bg-cyan-500 text-center">Visit Live Project &rarr;</a>
                     </div>
                     <div className='bg-orange-800 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
@@ -54,11 +54,11 @@ const EverydaySounds = () => {
                     <div className='bg-emerald-700 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Specifications</p>
                         <p className='mt-[1vw] font-light text-[15px] text-stone-200'> 
-                        <b><u>Date:</u></b> 2022 - 2024 <br/>
+                        <b><u>Date:</u></b> April 2022 - June 2024 <br/>
                         <b><u>Client(s):</u></b> Lord Crawford & Anyone (Personal Project) <br/>
                         <b><u>Tools Used:</u></b> Javascript (React), HTML, CSS, Figma, Adobe Illustrator, Vercel <br/>
                         <b><u>Role:</u></b> Sole Developer and Designer <br/> <br/>
-                        <b><u>URL/Link:</u></b> <a href="https://www.everydaysounds.live" class="text-cyan-400 font-medium hover:text-fuchsia-400">everydaysounds.live</a> <br/>
+                        <b><u>URL/Link:</u></b> <a href="https://www.everydaysounds.live" className="text-cyan-400 font-medium hover:text-fuchsia-400">everydaysounds.live</a> <br/>
                         <b><u>Figma: </u></b> <a href="https://www.figma.com/design/7nh13hwTftSHyRtyUoaeMV/Everyday-Sounds?node-id=105-159&t=pgEzHKFg9mwEflaW-1" class="text-cyan-400 font-medium hover:text-fuchsia-400">Visit Here</a>
                         </p>
                         
@@ -96,7 +96,7 @@ const EverydaySounds = () => {
                         </p>
                     </div>
 
-                    <div className='bg-cyan-700 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
+                    <div className='bg-cyan-800 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>v1 Everday Sounds - Design Process</p>
                         <p className='mt-[1vw] font-light text-[15px] text-stone-200'> 
                             <b className="text-[14pt]"><u>Low Fidelity Wireframe</u></b> <br/><br/>

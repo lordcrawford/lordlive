@@ -19,6 +19,10 @@ const Projects = () => {
         navigate("/everydaysounds");
     }
 
+    const goToVRCooking=()=>{
+        navigate("/vrcooking");
+    }
+
     return (
         <div id="projects">
             <div id="leftpanel" className='bg-white float-left h-screen grid overflow-y-scroll justify-self-center'>
@@ -44,20 +48,22 @@ const Projects = () => {
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
+                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-red-200"
+                    onClick={(e) => goToVRCooking()}>
+                        <img id='pin' className="absolute h-[25px] left-1 top-0" src={require('../photos/pin.png')} alt="pin"></img>
+                        <div className="title self-center w-2/5 pr-2">VR Cooking Simulator</div>
+                        <div className="description self-center w-3/5 pl-3 pr-4 font-[400]">Virtual kitchen environment that teaches players how to make pancakes. 
+                        <i> Served as a developer on the four-person team.</i></div>
+                        <p className='absolute bottom-0 right-0 text-[12px] md:text-[13px] italic italic text-sky-400'>Click to see case study</p>
+                    </div>
+
+                    <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
                     transition transform hover:skew-y-1 hover:border-l-8 hover:bg-teal-200"
                     onClick={(e) => goToLink('https://cooking.nytimes.com/')}>
                         <div className="title self-center w-2/5 pr-2">NYT Cooking - Ads</div>
                         <div className="description self-center w-3/5 pl-3 font-[400]"> Expanded NYT Cooking's ad coverage (App & Web)
                         by more than 100% and built it into a monetizable digital product. 
                         <i> Currently serving as lead Ad PM.</i> </div>
-                    </div>
-
-                    <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
-                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-red-200"
-                    onClick={(e) => goToLink('https://youtu.be/qeGczrRkh34')}>
-                        <div className="title self-center w-2/5 pr-2">VR Cooking Simulator</div>
-                        <div className="description self-center w-3/5 pl-3 pr-4 font-[400]">Virtual kitchen environment that teaches players how to make pancakes. 
-                        <i> Served as a developer on the four-person team.</i></div>
                     </div>
                     
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
