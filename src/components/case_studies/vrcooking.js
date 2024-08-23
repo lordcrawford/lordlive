@@ -25,7 +25,7 @@ const VRCooking = () => {
                     </div>
                     <div className='bg-stone-800 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Summary</p>
-                        <p className='mt-[1vw] font-light font-urbanist text-[15px] text-stone-200'>
+                        <p className='mt-[1vw] font-light font-urbanist text-[16px] text-stone-200'>
                             In this project, we explored how Virtual Reality can be used to teach a user how to follow
                             a recipe in a virtual environment containing the necessary virtual appliances,
                             utensils, and ingredients. Users are tasked with creating pancakes with fruits on 
@@ -38,7 +38,7 @@ const VRCooking = () => {
 
                     <div className='bg-stone-600 h-min mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Specifications</p>
-                        <p className='mt-[1vw] font-light text-[15px] text-stone-200 font-urbanist'> 
+                        <p className='mt-[1vw] font-light text-[16px] text-stone-200 font-urbanist'> 
                             <b><u>Date:</u></b> Jan 2022 - May 2022<br/>
                             <b><u>Client(s):</u></b> Columbia University CS Department<br/>
                             <b><u>Tools Used:</u></b> Unity 3D, C#, MRTK (Hand-Tracking), Oculus Quest 2 <br/>
@@ -50,7 +50,7 @@ const VRCooking = () => {
 
                     <div className='bg-stone-800 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Ideation</p>
-                        <p className='mt-[1vw] font-light text-[15px] text-stone-200 font-urbanist'> 
+                        <p className='mt-[1vw] font-light text-[16px] text-stone-200 font-urbanist'> 
                         As a team, we aimed to explore virtual environments that are familiar to most people 
                         and identify simple tasks to perform within them. Cooking naturally came to mind since
                          it is a common activity, and the kitchen is an environment that many can easily 
@@ -65,7 +65,7 @@ const VRCooking = () => {
 
                     <div className='bg-stone-600 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white flex flex-col'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Storyboard</p>
-                        <p className='mt-[1vw] font-light text-[15px] text-stone-200 mb-[2vw] font-urbanist'> 
+                        <p className='mt-[1vw] font-light text-[16px] text-stone-200 mb-[2vw] font-urbanist'> 
                             The below storyboard mocks an example scenario where 'Evelyn' is using our proposed
                             VR Cooking Pancake Simulator during one of their streams.
                         </p>
@@ -76,10 +76,10 @@ const VRCooking = () => {
 
                     <div className='bg-stone-800 h-min mt-[2.5vw] p-[10px] mr-[2vw] font-urbanist text-white flex flex-col'>
                         <p className='text-[5vw] md:text-[2vw] font-museomoderno font-normal'>Technical Development</p>
-                        <p className='mt-[1vw] font-light text-[15px] text-stone-200'> 
+                        <p className='mt-[1vw] font-light text-[16px] text-stone-200'> 
                             <b className="text-[14pt]"><u>Object Manipulation (My Role)</u></b> <br/><br/>
                         </p>
-                        <p className='font-light text-[15px] text-stone-200 mb-[2vw]'> 
+                        <p className='font-light text-[16px] text-stone-200 mb-[2vw]'> 
                             I programmed the ability for users to grab objects and translate or rotate them. This is
                             a core component of being able to wield cooking tools and mix ingredients together. Objects would 
                             change form depending on other influences such as mixing materials, heat, cutting, etc. As well, 
@@ -105,7 +105,7 @@ const VRCooking = () => {
                             <b className="text-[14pt]"><u>Wayfinding</u></b> <br/><br/>
                         </p>
 
-                        <p className='font-light text-[15px] text-stone-200 mb-[2vw]'> 
+                        <p className='font-light text-[16px] text-stone-200 mb-[2vw]'> 
                             Another teammate implemented the ability for users to move around the kitchen.
                             They specified destination gaze using controller input and limited wrist rotation. There were also 
                             arrows that helped direct users to the object they need to complete current step
@@ -122,7 +122,7 @@ const VRCooking = () => {
                             <b className="text-[14pt]"><u>Kitchen Environment</u></b> <br/><br/>
                         </p>
 
-                        <p className='font-light text-[15px] text-stone-200 mb-[2vw]'> 
+                        <p className='font-light text-[16px] text-stone-200 mb-[2vw]'> 
                             Lastly, another teammate designed and constructed the kitchen environment. 
 
                         </p>
