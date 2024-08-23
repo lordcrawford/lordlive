@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         museomoderno: ["MuseoModerno", "sans-serif"],
         limelight: ["Limelight", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
       },
     },
   },
