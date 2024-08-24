@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 
@@ -10,6 +10,23 @@ const Music = () => {
         navigate("/");
     }
 
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel');
+        const leftPanel = document.getElementById('leftpanel');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
+    
     return (
         <div id="music">
             <div id="leftpanel" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>

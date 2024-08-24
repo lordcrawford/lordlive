@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
@@ -11,6 +11,23 @@ const About = () => {
         navigate("/");
     }
 
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel');
+        const leftPanel = document.getElementById('leftpanel');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
+
     return (
         <div id="about">
             <div id="leftpanel" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden grid justify-self-center'>
@@ -20,8 +37,7 @@ const About = () => {
                     Hi! I'm Lord, a native New Yorker passionate about the intersection of technology and creativity.
                     At my core, I'm a product manager and creative technologist that crafts elegant digital experiences. 
                     Currently, as a Product Manager at The New York Times I lead the advertising 
-                    experience for NYT Games (Wordle, Connections, etc.) and NYT Cooking. My work
-                    has driven significant ad impressions and earned multiple NYT Publisher's Awards. 
+                    experience for NYT Games (Wordle, Connections, etc.) and NYT Cooking. 
                     <br/><br/>
                     Prior to this, I was a Product Manager at Twitter/X, interned as a Software Engineer at Google,
                     and served as the first product lead at a real estate startup. I hold a degree in 

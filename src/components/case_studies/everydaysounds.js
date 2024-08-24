@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
+import RightPanelProjects from '../righthalf/right_half_project.js';
 
 
 const EverydaySounds = () => {
@@ -12,9 +13,26 @@ const EverydaySounds = () => {
         navigate("/");
     }
 
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel_projects');
+        const leftPanel = document.getElementById('leftpanel_projects');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
+
     return (
         <div id="everydaysounds">
-            <div id="leftpanel" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
+            <div id="leftpanel_projects" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
                 <div id="name" className="text-[4vw] cursor-pointer ml-[3.5%] mt-[2%] space-y-[-2vw]" onClick={() => goHome()}><div>Lord</div><div>Crawford</div></div>
                 <hr className='mt-[2vw] mx-[2vw] border-black border-[1px]'/>
                 <div className=' ml-[3.5%] pb-[3vw]'>
@@ -91,9 +109,9 @@ const EverydaySounds = () => {
                             <b className="text-[14pt]"><u>Wireframes</u></b> <br/><br/>
                             <div className="flex flex-col">
                                 <p className="self-center">low fidelity wireframe</p>
-                                <img className="w-[95%] md:w-[80%] self-center mt-[3vw] md:mt-[1.5vw] mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/everydaysounds/home.jpg')} alt="first hi-fi wireframe"/>
+                                <img className="w-[95%] md:w-[75%] self-center mt-[3vw] md:mt-[1.5vw] mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/everydaysounds/home.jpg')} alt="first hi-fi wireframe"/>
                                 <p className="self-center mt-[5vw] md:mt-[2vw]">high fidelity wireframe</p>
-                                <img className="w-[95%] md:w-[80%] self-center mt-[3vw] md:mt-[1.5vw] mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/everydaysounds/v1es.png')} alt="first hi-fi wireframe"/>
+                                <img className="w-[95%] md:w-[75%] self-center mt-[3vw] md:mt-[1.5vw] mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/everydaysounds/v1es.png')} alt="first hi-fi wireframe"/>
                             </div>    
 
                             <b className="text-[14pt]"><u>Development</u></b> <br/><br/>
@@ -186,7 +204,7 @@ const EverydaySounds = () => {
                     
                 </div>
             </div>
-            <RightPanel/>
+            <RightPanelProjects/>
         </div>
     )
 }

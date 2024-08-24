@@ -10,9 +10,19 @@
     width:60%;
 }
 
+#leftpanel_projects{
+    overflow-y: scroll;
+    width:70%;
+}
+
 #rightpanel{
     position: relative;
     width:40%;
+}
+
+#rightpanel_projects{
+    position: relative;
+    width:30%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=MuseoModerno:wght@100;200;300;400&display=swap');
@@ -79,8 +89,23 @@ div{
         overflow-y: scroll;
         min-height: 100%;
     }
+    #leftpanel_projects{
+        width: 60%;
+        height: 100%;
+        max-height: 100%;
+        overflow-y: scroll;
+        min-height: 100%;
+    }
     
     #rightpanel{
+        width:40%;
+        height: 100%;
+        max-height: 100%;
+        overflow-y: scroll;
+        min-height: 100%;
+    }
+
+    #rightpanel_projects{
         width:40%;
         height: 100%;
         max-height: 100%;

@@ -1,8 +1,26 @@
+import { useEffect } from 'react';
 import RightPanel from "./righthalf/right_half.js";
 import './home.css';
 
 
 const Home = () => {
+
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel');
+        const leftPanel = document.getElementById('leftpanel');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
 
     return (
         <div id="home">
@@ -15,11 +33,10 @@ const Home = () => {
                             current work: everyday sounds<br/> <br/>
                             Based in New York City<br/><br/>
                         </div>
-                        {/* <img id="figure" className ="float-right w-[17%]" src={require('./photos/figure.gif')} alt="Figure" /> */}
                     </div>
                 </div>
             </div>
-            <RightPanel/>
+            <RightPanel />
         </div>
     )
 }

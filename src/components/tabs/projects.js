@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './projects.css';
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
+import RightPanelProjects from '../righthalf/right_half_project.js';
 
 const Projects = () => {
 
@@ -27,9 +28,26 @@ const Projects = () => {
         navigate("/bloombergconnects");
     }
 
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel_projects');
+        const leftPanel = document.getElementById('leftpanel_projects');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
+
     return (
         <div id="projects">
-            <div id="leftpanel" className='bg-white float-left h-screen grid overflow-y-scroll justify-self-center'>
+            <div id="leftpanel_projects" className='bg-white float-left h-screen grid overflow-y-scroll justify-self-center w-2/3'>
                 <div id="name" className="text-[4vw] cursor-pointer ml-[3.5%] mt-[2%] space-y-[-2vw]" onClick={() => goHome()}><div>Lord</div><div>Crawford</div></div>
                 <div id="all_project_list" className="mt-[5%] space-y-4 mb-10  w-[90%] h-full justify-self-center">
                     <div className="cursor-pointer project flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -125,7 +143,7 @@ const Projects = () => {
                     
                 </div>
             </div>
-            <RightPanel/>
+            <RightPanelProjects />
         </div>
     )
 }

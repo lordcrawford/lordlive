@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
+import RightPanelProjects from '../righthalf/right_half_project.js';
 
 
 const BloombergConnects = () => {
@@ -12,9 +13,26 @@ const BloombergConnects = () => {
         navigate("/");
     }
 
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel_projects');
+        const leftPanel = document.getElementById('leftpanel_projects');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
+
     return (
         <div id="bloombergconnects">
-            <div id="leftpanel" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
+            <div id="leftpanel_projects" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
                 <div id="name" className="text-[4vw] cursor-pointer ml-[3.5%] mt-[2%] space-y-[-2vw]" 
                 onClick={() => goHome()}><div>Lord</div><div>Crawford</div></div>
                 <hr className='mt-[2vw] mx-[2vw] border-black border-[1px]'/>
@@ -22,7 +40,7 @@ const BloombergConnects = () => {
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
                     <h1 id="es_title"className="underline decoration-dotted decoration-[6px] 
                     underline-offset-[13px] text-[9vw] md:text-[3.5vw] text-[#E71751] font-extrabold 
-                    self-center font-opensans">Bloomberg Connects Revamped</h1>
+                    self-center font-opensans w-[70%]">Bloomberg Connects Revamped</h1>
                         <a href="https://www.figma.com/proto/dPi3xupiuNMxmZh3ailFgf/Lord---Bloomberg-Connects-Revamped?page-id=&type=design&node-id=377-6019&viewport=4240%2C-501%2C0.25&t=YiFkxVAuI4WyWZJh-1&scaling=scale-down&starting-point-node-id=377%3A6019&show-proto-sidebar=1" 
                         className="mt-[2vw] md:mt-0 mr-[5%] bg-[#E71751] p-[1.5%] h-min 
                         text-white self-center hover:bg-rose-700 text-center">Visit Figma Link &rarr;</a>
@@ -34,9 +52,9 @@ const BloombergConnects = () => {
                         A part of this program was redesiging an existing app to
                         solve a problem and I chose the museum guide app<b className='font-bold text-rose-500'> Bloomberg Connects.</b><br/>
                         </p><br/>
-                        <div className="flex flex-col md:flex-row place-content-center space-y-[2vw] md:space-y-[0vw] md:space-x-[1vw]">
-                            <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/homescreen.png')} alt="first hi-fi wireframe"/>
-                            <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/customtour.png')} alt="first hi-fi wireframe"/>
+                        <div className="flex flex-col md:flex-row place-content-center space-y-[2vw] md:space-y-[0vw] md:space-x-[3vw]">
+                            <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/homescreen.png')} alt="first hi-fi wireframe"/>
+                            <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/customtour.png')} alt="first hi-fi wireframe"/>
                         </div><br/>
                         <p className='font-urbanist text-[13px]'>*I do not own Bloomberg Connects or any of the app/company. These are mocks.</p>
                     </div>
@@ -136,13 +154,13 @@ const BloombergConnects = () => {
                             </ul><br/>
                             
                             <div className="flex flex-col font-urbanist">
-                                <img className="w-[95%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/wireframes1bloomberg.jpg')} alt="first lo-fi wireframe"/>
-                                <img className="w-[95%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/wireframes1.2bloomberg.jpg')} alt="first lo-fi wireframe"/>
+                                <img className="w-[80%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/wireframes1bloomberg.jpg')} alt="first lo-fi wireframe"/>
+                                <img className="w-[80%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/wireframes1.2bloomberg.jpg')} alt="first lo-fi wireframe"/>
                                 <p>After collecting feedback from other designers and expanding on the detail in the 
                                 initial mocks, I created higher fidelity wireframes so that I could put it front
                                 of users.</p><br/>
-                                <img className="w-[95%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/hifi1bloomberg.jpg')} alt="first lo-fi wireframe"/>
-                                <img className="w-[95%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/hifi2bloomberg.jpg')} alt="first lo-fi wireframe"/>
+                                <img className="w-[80%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/hifi1bloomberg.jpg')} alt="first lo-fi wireframe"/>
+                                <img className="w-[80%] self-center mb-[5vw] md:mb-[2vw] h-auto object-cover" src={require('../photos/bloomberg/hifi2bloomberg.jpg')} alt="first lo-fi wireframe"/>
                             </div>
                         </p>
                     </div>
@@ -174,15 +192,15 @@ const BloombergConnects = () => {
                                 Taking into account the previous insights from user testing, I implemented
                                 changes to wireframes and created a final redesign of Bloomberg Connects.
                                 <br/><br/>
-                                <div className="flex flex-col md:flex-row place-content-center space-y-[2vw] md:space-y-[0vw] md:space-x-[1vw]">
-                                    <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/homescreen.png')} alt="first hi-fi wireframe"/>
-                                    <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/customtour.png')} alt="first hi-fi wireframe"/>
-                                    <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/tourselected.png')} alt="first hi-fi wireframe"/>
+                                <div className="flex flex-col md:flex-row place-content-center space-y-[2vw] md:space-y-[0vw] md:space-x-[2vw]">
+                                    <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/homescreen.png')} alt="first hi-fi wireframe"/>
+                                    <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/customtour.png')} alt="first hi-fi wireframe"/>
+                                    <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/tourselected.png')} alt="first hi-fi wireframe"/>
                                 </div><br/>
-                                <div className="flex flex-col md:flex-row place-content-center space-y-[2vw] md:space-y-[0vw] md:space-x-[1vw]">
-                                    <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/firstexhibit.png')} alt="first hi-fi wireframe"/>
-                                    <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/firstexhibitclickedinto.png')} alt="first hi-fi wireframe"/>
-                                    <img className="w-[95%] md:w-[32%] object-cover" src={require('../photos/bloomberg/nowplaying.png')} alt="first hi-fi wireframe"/>
+                                <div className="flex flex-col md:flex-row place-content-center space-y-[2vw] md:space-y-[0vw] md:space-x-[2vw]">
+                                    <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/firstexhibit.png')} alt="first hi-fi wireframe"/>
+                                    <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/firstexhibitclickedinto.png')} alt="first hi-fi wireframe"/>
+                                    <img className="w-[95%] md:w-[25%] object-cover" src={require('../photos/bloomberg/nowplaying.png')} alt="first hi-fi wireframe"/>
                                 </div>
                                 
                             </p>
@@ -215,7 +233,7 @@ const BloombergConnects = () => {
                     </div>
                 </div>
             </div>
-            <RightPanel/>
+            <RightPanelProjects/>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
+import RightPanelProjects from '../righthalf/right_half_project.js';
 
 
 const VRCooking = () => {
@@ -12,14 +13,33 @@ const VRCooking = () => {
         navigate("/");
     }
 
+    useEffect(() => {
+        const rightPanel = document.getElementById('rightpanel_projects');
+        const leftPanel = document.getElementById('leftpanel_projects');
+
+        const syncScroll = (event) => {
+            const currentScroll = leftPanel.scrollTop;
+            leftPanel.scrollTop = currentScroll + event.deltaY;
+            event.preventDefault();
+        };
+
+        rightPanel.addEventListener('wheel', syncScroll);
+
+        return () => {
+            rightPanel.removeEventListener('wheel', syncScroll);
+        };
+    }, []);
+
     return (
         <div id="vrcooking">
-            <div id="leftpanel" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
+            <div id="leftpanel_projects" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
                 <div id="name" className="text-[4vw] cursor-pointer ml-[3.5%] mt-[2%] space-y-[-2vw]" onClick={() => goHome()}><div>Lord</div><div>Crawford</div></div>
                 <hr className='mt-[2vw] mx-[2vw] border-black border-[1px]'/>
                 <div className=' ml-[3.5%] pb-[3vw]'>
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
-                        <h1 id="es_title"className="underline decoration-wavy decoration-[3px] underline-offset-[13px] text-[9vw] md:text-[3.5vw] text-yellow-500 font-medium self-center">VR Pancake Cooking Simulator</h1>
+                        <h1 id="es_title"className="underline decoration-wavy decoration-[3px] 
+                        underline-offset-[13px] text-[9vw] md:text-[3.5vw] text-yellow-500 
+                        font-medium self-center w-[70%]">VR Pancake Cooking Simulator</h1>
                         <a href="https://youtu.be/qeGczrRkh34" className="mt-[2vw] md:mt-0 mr-[5%] bg-yellow-500 p-[1.5%] h-min 
                         text-white self-center hover:bg-yellow-600 text-center">Visit Live Demo &rarr;</a>
                     </div>
@@ -71,7 +91,7 @@ const VRCooking = () => {
                         </p>
                         
                         <p className='self-center text-[13px] text-stone-200 font-light font-urbanist'>Example Scenario</p>
-                        <img className="w-[95%] self-center md:w-[95%] ml-[1%] h-auto object-cover" src={require('../photos/vrcooking/storyboard1_vrcooking.png')} alt="lo-fi wireframe"/><br/>
+                        <img className="w-[95%] self-center md:w-[80%] ml-[1%] h-auto object-cover" src={require('../photos/vrcooking/storyboard1_vrcooking.png')} alt="lo-fi wireframe"/><br/>
                     </div>
 
                     <div className='bg-stone-800 h-min mt-[2.5vw] p-[10px] mr-[2vw] font-urbanist text-white flex flex-col'>
@@ -133,7 +153,7 @@ const VRCooking = () => {
                     
                 </div>
             </div>
-            <RightPanel/>
+            <RightPanelProjects/>
         </div>
     )
 }
