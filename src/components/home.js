@@ -30,7 +30,7 @@ const Home = () => {
                     <div>
                         <div id="summary">
                             multi-disciplinary creation<br/>
-                            current work: everyday sounds<br/> <br/>
+                            current work: something new<br/> <br/>
                             Based in New York City<br/><br/>
                         </div>
                     </div>

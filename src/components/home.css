@@ -10,7 +10,7 @@
     width:60%;
 }
 
-#leftpanel_projects{
+#leftpanel_wide{
     overflow-y: scroll;
     width:70%;
 }
@@ -20,7 +20,7 @@
     width:40%;
 }
 
-#rightpanel_projects{
+#rightpanel_slim{
     position: relative;
     width:30%;
 }
@@ -89,7 +89,7 @@ div{
         overflow-y: scroll;
         min-height: 100%;
     }
-    #leftpanel_projects{
+    #leftpanel_wide{
         width: 60%;
         height: 100%;
         max-height: 100%;
@@ -105,7 +105,7 @@ div{
         min-height: 100%;
     }
 
-    #rightpanel_projects{
+    #rightpanel_slim{
         width:40%;
         height: 100%;
         max-height: 100%;

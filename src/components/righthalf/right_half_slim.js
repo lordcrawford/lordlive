@@ -12,7 +12,7 @@ var colorSet = ["#4A5AED", "#FFC701" , "#C8FF2B", "#C31E46", "#A66C15",
                 "#4800A4", "#56FF85", "#FF3D00" , "#E37575",
                 "#B27AFA", "#F90", "#727D2B", "#1AF3F3", "#DDE993", "#FF00E5"]
 
-const RightPanelProjects = () => {
+const RightPanelSlim = () => {
   
     const navigate = useNavigate()
 
@@ -36,7 +36,7 @@ const RightPanelProjects = () => {
     }
 
     return (
-        <div className="float-right flex flex-wrap h-screen" id="rightpanel_projects">
+        <div className="float-right flex flex-wrap h-screen" id="rightpanel_slim">
             <TabSpace color={colorSet[0]} pagename="about" handleClick={() => goToAbout()} id="about_space"/> 
             <ContentSpace color={colorSet[1]}>
                 <StarfieldAnimation/>
@@ -63,4 +63,4 @@ const RightPanelProjects = () => {
 }
   
 
-export default RightPanelProjects
+export default RightPanelSlim

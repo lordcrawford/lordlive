@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
-import RightPanelProjects from '../righthalf/right_half_project.js';
+import RightPanelSlim from '../righthalf/right_half_slim.js';
 
 
 const VRCooking = () => {
@@ -14,7 +14,7 @@ const VRCooking = () => {
     }
 
     useEffect(() => {
-        const rightPanel = document.getElementById('rightpanel_projects');
+        const rightPanel = document.getElementById('rightpanel_slim');
         const leftPanel = document.getElementById('leftpanel_projects');
 
         const syncScroll = (event) => {
@@ -32,7 +32,7 @@ const VRCooking = () => {
 
     return (
         <div id="vrcooking">
-            <div id="leftpanel_projects" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
+            <div id="leftpanel_wide" className='bg-white float-left h-screen overflow-y-scroll overflow-hidden justify-self-center'>
                 <div id="name" className="text-[4vw] cursor-pointer ml-[3.5%] mt-[2%] space-y-[-2vw]" onClick={() => goHome()}><div>Lord</div><div>Crawford</div></div>
                 <hr className='mt-[2vw] mx-[2vw] border-black border-[1px]'/>
                 <div className=' ml-[3.5%] pb-[3vw]'>
@@ -153,7 +153,7 @@ const VRCooking = () => {
                     
                 </div>
             </div>
-            <RightPanelProjects/>
+            <RightPanelSlim/>
         </div>
     )
 }
