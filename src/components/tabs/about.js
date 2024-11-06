@@ -63,6 +63,7 @@ const About = () => {
                         <li>Human-Centered Design</li>
                         <li>UI/UX Design</li>
                         <li>Web Design & Development</li>
+                        <li>Augmented & Virtual Reality</li>
                     </ul> <br/>
 
                     <h2 className="font-extrabold">Awards</h2>
@@ -70,7 +71,7 @@ const About = () => {
                         <li>NYT - Publisher Award (Games Sponsorships)</li>
                         <li>NYT - Publisher Award (Cooking Product Development)</li>
                         <li>NYTA - Product Development of the Year (2023)</li>
-                        <li>NYT Maker Week - Team Project Awarded 'Best Design'</li>
+                        <li>NYT Maker Week 2024 - Team Project Awarded 'Best Design'</li>
                     </ul> <br/>
 
                     <h2 className="font-extrabold">Education</h2>

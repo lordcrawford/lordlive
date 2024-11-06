@@ -30,7 +30,7 @@ const Projects = () => {
 
     useEffect(() => {
         const rightPanel = document.getElementById('rightpanel_slim');
-        const leftPanel = document.getElementById('leftpanel_projects');
+        const leftPanel = document.getElementById('leftpanel_wide');
 
         const syncScroll = (event) => {
             const currentScroll = leftPanel.scrollTop;
@@ -55,7 +55,7 @@ const Projects = () => {
                         <img id='pin' className="absolute h-[25px] left-1 top-0" src={require('../photos/pin.png')} alt="pin"></img>
                         <div className="title self-center w-2/5 pr-2 font-[350] ">Everyday Sounds</div>
                         <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist">Web-based beat maker, programmed using React</div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic text-red-500 font-urbanist '>Click to see case study</p>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic text-red-500 font-urbanist '>View case study</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -63,10 +63,8 @@ const Projects = () => {
                     onClick={(e) => goToBloombergConnects()}>
                         <div className="title self-center w-2/5 pr-2 font-[350]">Bloomberg Connects Revamped</div>
                         <img id='pin' className="absolute h-[25px] left-1 top-0" src={require('../photos/pin.png')} alt="pin"></img>
-                        <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist"> Conducted a 
-                        full redesign of the museum guide app - Bloomberg Connects. 
-                        <i> Utilized Figma as sole designer.</i> </div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Click to see case study</p>
+                        <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist"> Full redesign of the museum guide app - Bloomberg Connects. </div>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>View case study</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -77,16 +75,16 @@ const Projects = () => {
                         <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist" > Full-screen interstitial advertisement on The 
                         New York Times' Connections game (Sponsors: Dior, Oura, Capital One, & Uber Eats).
                         <i> Served as lead PM.</i> </div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Click to see press release</p>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Read press release</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
                     transition transform hover:skew-y-1 hover:border-l-8 hover:bg-red-200"
                     onClick={(e) => goToVRCooking()}>
                         <div className="title self-center w-2/5 pr-2 font-[350]">VR Cooking Simulator</div>
-                        <div className="description self-center w-3/5 pl-3 pr-4 font-[400] font-urbanist">Virtual kitchen environment that teaches players how to make pancakes. 
-                        <i> Served as a developer on the four-person team.</i></div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Click to see case study</p>
+                        <div className="description self-center w-3/5 pl-3 pr-4 font-[400] font-urbanist">Virtual reality kitchen environment that teaches players how to make pancakes. Utilized C# and Unity 3D. 
+                        </div>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>View case study</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -95,8 +93,8 @@ const Projects = () => {
                         <div className="title self-center w-2/5 pr-2 font-[350]">NYT Cooking - Ads</div>
                         <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist"> Expanded NYT Cooking's ad coverage (App & Web)
                         by more than 100% and built it into a monetizable digital product. 
-                        <i> Currently serving as lead Ad PM.</i> </div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Click to see website</p>
+                        <i> Served as lead Ad PM.</i> </div>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>View website</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -104,9 +102,8 @@ const Projects = () => {
                     onClick={(e) => goToLink('https://www.marketingdive.com/news/new-york-times-wordle-new-mobile-ad-format-doordash/685073/')}>
                         <div className="title self-center w-2/5 pr-2 font-[350]">NYT Wordle - Ads</div>
                         <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist"> Full-screen interstitial
-                        advertisement on The New York Times' Wordle game (Sponsor: DoorDash).
-                        <i> Served as supporting PM</i> </div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Click to see press release</p>
+                        advertisement on The New York Times' Wordle game (Sponsor: DoorDash)</div>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Read press release</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -119,11 +116,13 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="project flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
-                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-yellow-200">
+                    <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
+                    transition transform hover:skew-y-1 hover:border-l-8 hover:bg-yellow-200"
+                    onClick={(e) => goToLink('https://drive.google.com/file/d/1Ip8py8Nn5QNUmsP6Dgi7O7gv27TGsOhe/view?usp=sharing')}>
                         <div className="title self-center w-2/5 pr-2 font-[350]">A Post a Day Keeps the Doctor Away</div>
                         <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist"> Co-authored a Human-Computer Interaction research paper analyzing 
                              people’s willingness to share personal info on online self-diagnosis platforms</div>
+                             <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>View paper</p>
                     </div>
 
                     <div className="project cursor-pointer flex flex-row h-[7.1rem] border-b-2 border-l-2 pl-4 border-black 
@@ -138,7 +137,7 @@ const Projects = () => {
                         <div className="title self-center w-2/5 pr-2 font-[350]">LionBot</div>
                         <div className="description self-center w-3/5 pl-3 font-[400] font-urbanist"> Facebook Messenger chatbot meant to make life at Columbia University easier for students. 
                         <i> Served as a developer on the four-person team.</i></div>
-                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>Click to see repo</p>
+                        <p className='absolute bottom-0 right-0 text-[12px] italic italic text-red-400 font-urbanist '>View repository</p>
                     </div>
                     
                 </div>

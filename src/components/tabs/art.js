@@ -12,7 +12,7 @@ const Art = () => {
     
     useEffect(() => {
         const rightPanel = document.getElementById('rightpanel_slim');
-        const leftPanel = document.getElementById('leftpanel');
+        const leftPanel = document.getElementById('leftpanel_wide');
 
         const syncScroll = (event) => {
             const currentScroll = leftPanel.scrollTop;

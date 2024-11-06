@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import RightPanel from "../righthalf/right_half.js";
 import { useNavigate } from "react-router-dom";
 import '../home.css';
 import RightPanelSlim from '../righthalf/right_half_slim.js';
@@ -15,7 +14,7 @@ const VRCooking = () => {
 
     useEffect(() => {
         const rightPanel = document.getElementById('rightpanel_slim');
-        const leftPanel = document.getElementById('leftpanel_projects');
+        const leftPanel = document.getElementById('leftpanel_wide');
 
         const syncScroll = (event) => {
             const currentScroll = leftPanel.scrollTop;
