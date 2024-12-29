@@ -12,6 +12,7 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         urbanist: ["Urbanist", "sans-serif"],
         opensans: ["Open Sans", "sans-serif"],
+        georgia: ['Georgia', 'serif'],
       },
     },
   },

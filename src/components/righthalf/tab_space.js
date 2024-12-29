@@ -13,7 +13,7 @@ class TabSpace extends React.Component {
                     projectElement.firstChild.style.fontWeight = '400';
                 }else{
                     projectElement.firstChild.classList.remove('underline');
-                    projectElement.firstChild.style.fontWeight = '100';
+                    projectElement.firstChild.style.fontWeight = '200';
                 }
             }
         }
@@ -30,7 +30,7 @@ class TabSpace extends React.Component {
         function handleMouseOut(e) {
             let tab_name = window.location.pathname.substring(1);
             if(tab_name !== e.target.firstChild.textContent){
-                e.target.firstChild.style.fontWeight = '100';
+                e.target.firstChild.style.fontWeight = '200';
             }
         }
 
