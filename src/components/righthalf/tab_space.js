@@ -23,13 +23,15 @@ class TabSpace extends React.Component {
         function handleMouseOver(e) {
             let tab_name = window.location.pathname.substring(1);
             if(tab_name !== e.target.firstChild.textContent){
-                e.target.firstChild.style.color = 'black';
+                e.target.firstChild.style.fontWeight = '400';
             }
         }
 
         function handleMouseOut(e) {
-
-            e.target.firstChild.style.color = 'white';
+            let tab_name = window.location.pathname.substring(1);
+            if(tab_name !== e.target.firstChild.textContent){
+                e.target.firstChild.style.fontWeight = '100';
+            }
         }
 
         

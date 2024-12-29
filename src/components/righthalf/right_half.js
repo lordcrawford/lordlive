@@ -50,7 +50,8 @@ const RightPanel = () => {
             <ContentSpace color={colorSet[8]}>
                 <ColorCircles/>
             </ContentSpace>
-            <TabSpace color={colorSet[11]} pagename="writing" handleClick={() => goToWriting()}/>
+            <ContentSpace color={colorSet[11]}/>
+            {/* <TabSpace color={colorSet[11]} pagename="writing" handleClick={() => goToWriting()}/> */}
             <ContentSpace color={colorSet[10]}/>
             <ContentSpace color={colorSet[4]}/>
             <ContentSpace color={colorSet[12]}/>
