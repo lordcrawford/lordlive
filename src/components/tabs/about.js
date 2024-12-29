@@ -38,7 +38,7 @@ const About = () => {
                     and creativity, dedicated to crafting impactful digital experiences. 
                     Currently, as a Product Manager at The New York Times, he leads the advertising 
                     experience for <a className="text-blue-500 font-medium italic hover:font-bold" 
-                    href="https://www.nytimes.com/crosswords">NYT Games</a> (Wordle, Connections, Crossword, etc.) 
+                    href="https://www.lord.live/adsnytgames">NYT Games</a> (Wordle, Connections, Crossword, etc.) 
                     and <a className="text-blue-500 font-medium italic hover:font-bold" 
                     href="https://cooking.nytimes.com/">NYT Cooking</a>. 
                     <br/><br/>
@@ -82,39 +82,38 @@ const About = () => {
                     <p className='mt-[5px] italic'>The New York Times</p> 
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
                         
-                        <li className='md:pl-3'>Publisher Award (Games Sponsorships)</li>
-                        <li className='md:pl-3'>Publisher Award (Cooking Product Development)</li>
-                        <li className='md:pl-3'>Product Development of the Year (2023)</li>
-                        <li className='md:pl-3'>Maker Week 2024 - Team Project Awarded 'Best Design'</li>
+                        <li className='md:pl-3'>2024 - Publisher Award (Games Sponsorships)</li>
+                        <li className='md:pl-3'>2024 - Publisher Award (Cooking Product Development)</li>
+                        <li className='md:pl-3'>2024 - Maker Week Team Project Awarded 'Best Design'</li>
+                        <li className='md:pl-3'>2023 - NYT Advertising Product Development of the Year</li>
                     </ul>
 
                     <p className="mt-[10px] italic">Columbia University</p>
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        
-                        <li className='md:pl-3'>Dean's List</li>
-                        <li className='md:pl-3'>Columbia in Tech 'Rising Star' Fellow</li>
-                        <li className='md:pl-3'><a className="text-blue-500 font-medium 
-                         hover:font-bold" href="https://www.cc-seas.columbia.edu/awards/descriptions/ZviGalilAward">Zvi Galil</a> (2020)</li>
-                        <li className='md:pl-3'><a className="text-blue-500 font-medium 
+                        <li className='md:pl-3'>2024 - Columbia in Tech 'Rising Star' Fellow</li>
+                        <li className='md:pl-3'>2022 - Dean's List</li>
+                        <li className='md:pl-3'>2020 - <a className="text-blue-500 font-medium 
+                         hover:font-bold" href="https://www.cc-seas.columbia.edu/awards/descriptions/ZviGalilAward">Zvi Galil</a> (Columbia Organization of Rising Entreprenuers)</li>
+                        <li className='md:pl-3'>2018 - <a className="text-blue-500 font-medium 
                          hover:font-bold" href="https://neighbors.columbia.edu/content/dyckman-institute-scholarship">
                             Dyckman Scholar</a></li>
                     </ul>
                     
                     <p className="mt-[10px] italic">External</p>
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        <li className='md:pl-3'><a className="text-blue-500 font-medium 
+                        <li className='md:pl-3'>2024 - <a className="text-blue-500 font-medium 
                          hover:font-bold" href="https://www.aigany.org/">
                             American Institute of Graphic Arts NY</a> Design Fellow</li>
-                        <li className='md:pl-3'><a className="text-blue-500 font-medium 
+                        <li className='md:pl-3'>2021 - <a className="text-blue-500 font-medium 
                          hover:font-bold" href="https://www.anddesign.co/fellows-profiles/lord-crawford">Access&_Design Fellow</a></li>
-                        <li className='md:pl-3'>Dr. Calvin Martin Memorial Scholar</li>
+                        <li className='md:pl-3'>2018 - Dr. Calvin Martin Memorial Scholar</li>
                     </ul> <br/>
 
                     <h2 className="font-extrabold md:text-[18px]">Education</h2>
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        <li>Columbia University - Bachelor of Science, Computer Science </li>
+                        <li>Columbia University - Bachelor of Science, Computer Science</li>
                         <li>Pratt Institute - Digital Product Design Certificate</li>
-                        <li>CCA - Graphic Design Specialization (Online, In-Progress)</li>
+                        <li>California College of the Arts - Graphic Design Specialization (Online, In-Progress)</li>
                     </ul> <br/>
 
                     <hr></hr>

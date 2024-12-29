@@ -71,7 +71,9 @@ const AdsNYTGames = () => {
                             <b><u>Date:</u></b> April 2023 - Present <br/>
                             <b><u>Client(s):</u></b> NYT Advertisers, NYT Games users <br/>
                             <b><u>Tools Used:</u></b> Figma, Javascript, HTML/CSS, Swift, JIRA, Mode Analytics, Tableau, Google Ad Manager (GAM) <br/>
-                            <b><u>Role:</u></b> Product Manager<br/><br/>
+                            <b><u>Role:</u></b> Product Manager<br/>
+                            <b><u>NYT Games:</u></b> <a href="https://www.nytimes.com/crosswords" 
+                            class="text-blue-300 font-bold hover:text-fuchsia-400">Visit Here</a><br/><br/>
                             <b><u>Contributions:</u></b>
                             <ul className='list-[square] list-outside pl-6'>
                                 <li>Identified new business opportunities to maximize ad revenue, improve ad efficiency, and mitigate impact to user engagement.</li>
