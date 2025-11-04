@@ -39,22 +39,22 @@ const AdsNYTGames = () => {
                     <div className='flex flex-col md:flex-row justify-between mt-[2%]'>
                     <h1 id="es_title"className=" decoration-[6px] 
                     underline-offset-[13px] text-[9vw] md:text-[3vw] text-black font-extrabold 
-                    self-center font-georgia w-[70%]">NYT Games - <i className='font-urbanist font-normal'>Ad Experience</i></h1>
+                    self-center font-georgia w-[70%]">NYT Games - <span className='font-urbanist font-normal'>Ad Experience</span></h1>
                         <a href="https://www.nytimes.com/crosswords" 
                         className="mt-[2vw] md:mt-0 mr-[5%] bg-[#5B87F1] p-[1.5%] h-min 
-                        text-white self-center hover:bg-rose-700 text-center">Visit NYT Games &rarr;</a>
+                        text-white self-center hover:bg-blue-600 text-center">Visit NYT Games &rarr;</a>
                     </div>
                     <div className='bg-stone-800 h-min mt-[5vw] md:mt-[2.5vw] p-[10px] mr-[2vw] text-white'>
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Summary</p>
-                        <p className='mt-[1vw] font-light font-urbanist text-[17px] text-stone-200'> Since April 2023, 
-                            I have led the strategy and execution of the advertising experience for New York Times Games, 
+                        <p className='mt-[1vw] font-light font-urbanist text-[17px] text-stone-200'> From April 2023 to August 2025, 
+                            I led the strategy and execution of the advertising experience for New York Times Games, 
                             managing a 10-person team to design and build end-to-end ad integrations across web, iOS, and 
-                            Android devices. This includes launching ad experiences in popular word games like Connections, 
+                            Android devices. This included launching ad experiences in popular word games like Connections, 
                             Spelling Bee, and more. <br/><br/>
                             
-                            The overarching goal is <b className='text-yellow-600 font-bold'>establishing advertising in NYT Games
+                            The goal was <b className='text-yellow-600 font-semibold'>to introduce advertising in NYT Games
                             to drive revenue without compromising the player experience</b>. 
-                            I work to create ad experiences that feel premium and effectively broadcast an advertiser's message.
+                            I worked to create ad experiences that feel premium and effectively broadcast an advertiser's message.
                         </p><br/>
                         <div className="flex flex-col">
                             <p className='self-center text-[16px] mt-[30px] font-urbanist text-stone-200 font-light'>Connections Mobile Interstitial Ad Experience</p>
@@ -73,7 +73,7 @@ const AdsNYTGames = () => {
                             <b><u>Tools Used:</u></b> Figma, Javascript, HTML/CSS, Swift, JIRA, Mode Analytics, Tableau, Google Ad Manager (GAM) <br/>
                             <b><u>Role:</u></b> Product Manager<br/>
                             <b><u>NYT Games:</u></b> <a href="https://www.nytimes.com/crosswords" 
-                            class="text-blue-300 font-bold hover:text-fuchsia-400">Visit Here</a><br/><br/>
+                            class="text-blue-300 font-bold hover:text-blue-500">Visit Here</a><br/><br/>
                             <b><u>Contributions:</u></b>
                             <ul className='list-[square] list-outside pl-6'>
                                 <li>Identified new business opportunities to maximize ad revenue, improve ad efficiency, and mitigate impact to user engagement.</li>
@@ -106,10 +106,10 @@ const AdsNYTGames = () => {
                                 <li><b className='font-bold text-yellow-600'>5-Second Hold on Video Ads (Mobile)</b> - 
                                 Introduced an optimization that ensures higher engagement on video advertisements,
                                  on par with industry standards.</li>
-                                <li><b className='font-bold text-yellow-600'>Ad Experience on NYT Games Home Page</b> - 
-                                Implemented ad frames in a central hub for NYT games users.</li>
-                                <li><b className='font-bold text-yellow-600'>Ad Experience on New York Times App 'Play Tab'</b> - 
-                                Implemented ad frames in a central hub for NYT games users.</li>
+                                <li><b className='font-bold text-yellow-600'>Ad Experience on NYT Games Home Page</b></li>
+                                <li><b className='font-bold text-yellow-600'>Ad Experience on New York Times App 'Play Tab'</b></li>
+                                <li><b className='font-bold text-yellow-600'>Ad Experience on New York Times Games iOS & Android Apps</b></li>
+                                <li><b className='font-bold text-yellow-600'>Programmatic Video Ad Infrastructure on NYT Games Mobile Web</b></li>
                                 
                             </ul> <br/>
                         </p>
@@ -120,20 +120,24 @@ const AdsNYTGames = () => {
                         <p className='text-[5vw] md:text-[2vw] font-normal'>Press Releases</p>
                         <p className='mt-[1vw] font-light text-[17px] text-stone-200 font-urbanist'> 
                             <ul className='list-[square] list-outside pl-6'>
-                                <li className='mt-[5px]'><a href="https://www.marketingdive.com/news/new-york-times-wordle-new-mobile-ad-format-doordash/685073/" 
-                                class="text-blue-300 italic underline font-bold hover:text-fuchsia-400">NYT’s Wordle 
-                                debuts new mobile ad format with DoorDash </a> - Marketing Dive | July 6, 2023</li>
-                                <li><a href="https://www.adforum.com/news/new-york-times-advertising-launches-ads-in-connections-with-launch-sponsors-uber-eats-capital-one-and-oura" 
-                                class="text-blue-300 italic underline font-bold hover:text-fuchsia-400">New York Times Advertising Launches Ads in 
-                                Connections with Launch Sponsors Uber Eats, Capital One and ŌURA
-                                </a> - AdForum | December 6, 2023</li>
+                                <li className='mt-[5px]'><a href="https://www.nytimes.com/2025/08/06/business/media/new-york-times-earnings.html" 
+                                class="text-blue-300 italic underline font-semibold hover:text-blue-500">New York Times Revenue 
+                                Jumps 9.7% From Subscriptions and Ads
+                                </a> - The New York Times | August 6, 2025</li>
+                                <li><a href="https://www.adexchanger.com/publishers/nyts-ad-and-subscription-revenue-surge-as-wapo-flails/" 
+                                class="text-blue-300 italic underline font-semibold hover:text-blue-500">NYT's Ad And Subscription 
+                                Revenue Surge As WaPo Flails</a> - AdExchanger | November 4, 2024</li>
                                 <li><a href="https://www.adweek.com/media/new-york-times-games-advertising/" 
-                                class="text-blue-300 italic underline font-bold hover:text-fuchsia-400">The New York 
+                                class="text-blue-300 italic underline font-semibold hover:text-blue-500">The New York 
                                 Times Games Advertising Is More Than an Awareness Machine
                                 </a> - Adweek | February 6, 2024</li>
-                                <li><a href="https://www.adexchanger.com/publishers/nyts-ad-and-subscription-revenue-surge-as-wapo-flails/" 
-                                class="text-blue-300 italic underline font-bold hover:text-fuchsia-400">NYT’s Ad And Subscription 
-                                Revenue Surge As WaPo Flails</a> - AdExchanger | November 4, 2024</li>
+                                <li><a href="https://www.adforum.com/news/new-york-times-advertising-launches-ads-in-connections-with-launch-sponsors-uber-eats-capital-one-and-oura" 
+                                class="text-blue-300 italic underline font-semibold hover:text-blue-500">New York Times Advertising Launches Ads in 
+                                Connections with Launch Sponsors Uber Eats, Capital One and ŌURA
+                                </a> - AdForum | December 6, 2023</li>
+                                <li><a href="https://www.marketingdive.com/news/new-york-times-wordle-new-mobile-ad-format-doordash/685073/" 
+                                class="text-blue-300 italic underline font-semibold hover:text-blue-500">NYT's Wordle 
+                                debuts new mobile ad format with DoorDash </a> - Marketing Dive | July 6, 2023</li>
                             </ul> <br/>
                         </p>
 

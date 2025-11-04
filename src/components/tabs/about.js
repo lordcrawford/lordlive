@@ -35,28 +35,31 @@ const About = () => {
                 <div className="text-[3.5vw] md:text-[17px] mt-[5%] w-[80%] justify-self-center font-normal font-urbanist">
                     
                     Lord Crawford is a native New Yorker working at the intersection of technology 
-                    and creativity, dedicated to crafting impactful digital experiences. 
-                    Currently, as a Product Manager at The New York Times, he leads the advertising 
-                    experience for <a className="text-blue-500 font-medium italic hover:font-bold" 
+                    and creativity. Currently, as a Design Master's student at Stanford University's 
+                    d.school, he is exploring computer vision, mixed reality, and social computing. 
+                    Lord is dedicated to crafting impactful digital experiences, specifically those 
+                    that can adapt to a user's needs and preferences as it pertains to context, 
+                    demographic, and ability. 
+                    <br/><br/>
+                    Prior to joining the d.school, Lord spent three years as a product manager within the media
+                    industry—most recently The New York Times and Twitter—where he designed and built advertising 
+                    products and localization strategies at scale. Notably, at The New York Times, he led the advertising 
+                    experience for <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
                     href="https://www.lord.live/adsnytgames">NYT Games</a> (Wordle, Connections, Crossword, etc.) 
-                    and <a className="text-blue-500 font-medium italic hover:font-bold" 
+                    and <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
                     href="https://cooking.nytimes.com/">NYT Cooking</a>. 
                     <br/><br/>
-                    Previously, he was a Product Manager at Twitter/X, a Software Engineer intern at Google,
-                    and served as the first product lead at a real estate startup. He holds a degree in 
-                    Computer Science from Columbia University with a focus on Human-Computer Interaction 
-                    and recently completed the Digital Product Design Certificate Program at Pratt Institute.
-                    He also serves on the Board of Trustees at <a className="text-blue-500 italic font-medium 
-                         hover:font-bold" href="https://www.sthopeleadershipacademy.org/about/">
-                            St. HOPE Leadership Academy</a>.<br/><br/>
-
-                    In addition to his professional roles, Lord has built a variety of digital projects from 
-                    scratch, including a <a className="text-blue-500 font-medium italic hover:font-bold" 
-                    href="https://www.everydaysounds.live/">web-based digital audio workstation</a>, <a 
-                    className="text-blue-500 font-medium italic hover:font-bold" 
-                    href="https://www.lord.live/vrcooking"> virtual reality cooking simulator</a>, 
-                    and <a className="text-blue-500 font-medium italic hover:font-bold" 
-                    href="https://www.lord.live/projects">more</a>. Lord welcomes new collaborations 
+                    He holds a Bachelor's degree in Computer Science from Columbia University with a 
+                    focus on Human-Computer Interaction and completed the Digital Product Design Certificate 
+                    Program at Pratt Institute. Outside of these professional roles, Lord has built a variety of creative tech projects, 
+                    including a web-based digital audio workstation, virtual reality cooking simulator, 
+                    and <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
+                    href="https://www.lord.live/projects">more</a>. As well, hailing from Washington Heights, New York, Lord is
+                    passionate to serve the Harlem community that nurtured him and is on the Board of Trustees for <a className="underline decoration-blue-500 
+                    underline-offset-[2px] decoration-[2px] hover:font-semibold" href="https://www.sthopeleadershipacademy.org/about/board-of-directors/board-members-biographies/">
+                    St. HOPE Leadership Academy</a>.<br/><br/>
+                    
+                    Lord welcomes new collaborations 
                     and creative projects — please feel free to reach out.
 
 
@@ -64,56 +67,60 @@ const About = () => {
 
                     <h2 className="font-extrabold md:text-[18px]">Contact </h2>
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        <li>Email: <a className="underline decoration-purple-500 decoration-[3px] hover:font-bold" href="mailto:lordcrawford2@gmail.com">lordcrawford2@gmail.com</a></li>
-                        <li>Social: <a className="underline decoration-purple-500 decoration-[3px] hover:font-bold" href="https://www.linkedin.com/in/lord-crawford/">LinkedIn</a></li>
+                        <li>Email: <a className="underline decoration-purple-500 decoration-[3px] hover:font-semibold" href="mailto:lordcrawford2@gmail.com">lordcrawford2@gmail.com</a></li>
+                        <li>Social: <a className="underline decoration-purple-500 decoration-[3px] hover:font-semibold" href="https://www.linkedin.com/in/lord-crawford/">LinkedIn</a></li>
                     </ul>
                     <br/>
 
                     <h2 className="font-extrabold md:text-[18px]">Specialities</h2>
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
+                        <li>UI/UX Design</li>
                         <li>Product Management & Strategy</li>
                         <li>Human-Centered Design</li>
-                        <li>UI/UX Design</li>
                         <li>Web Design & Development</li>
                         <li>Augmented & Virtual Reality</li>
                     </ul> <br/>
 
                     <h2 className="font-extrabold md:text-[18px]">Awards</h2>
-                    <p className='mt-[5px] italic'>The New York Times</p> 
-                    <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        
-                        <li className='md:pl-3'>2024 - Publisher Award (Games Sponsorships)</li>
-                        <li className='md:pl-3'>2024 - Publisher Award (Cooking Product Development)</li>
-                        <li className='md:pl-3'>2024 - Maker Week Team Project Awarded 'Best Design'</li>
-                        <li className='md:pl-3'>2023 - NYT Advertising Product Development of the Year</li>
-                    </ul>
 
-                    <p className="mt-[10px] italic">Columbia University</p>
-                    <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        <li className='md:pl-3'>2024 - Columbia in Tech 'Rising Star' Fellow</li>
-                        <li className='md:pl-3'>2022 - Dean's List</li>
-                        <li className='md:pl-3'>2020 - <a className="text-blue-500 font-medium 
-                         hover:font-bold" href="https://www.cc-seas.columbia.edu/awards/descriptions/ZviGalilAward">Zvi Galil</a> (Columbia Organization of Rising Entreprenuers)</li>
-                        <li className='md:pl-3'>2018 - <a className="text-blue-500 font-medium 
-                         hover:font-bold" href="https://neighbors.columbia.edu/content/dyckman-institute-scholarship">
-                            Dyckman Scholar</a></li>
-                    </ul>
-                    
-                    <p className="mt-[10px] italic">External</p>
-                    <ul className='list-[square] list-outside md:list-inside pl-3'>
-                        <li className='md:pl-3'>2024 - <a className="text-blue-500 font-medium 
-                         hover:font-bold" href="https://www.aigany.org/">
-                            American Institute of Graphic Arts NY</a> Design Fellow</li>
-                        <li className='md:pl-3'>2021 - <a className="text-blue-500 font-medium 
-                         hover:font-bold" href="https://www.anddesign.co/fellows-profiles/lord-crawford">Access&_Design Fellow</a></li>
-                        <li className='md:pl-3'>2018 - Dr. Calvin Martin Memorial Scholar</li>
-                    </ul> <br/>
+                        <p className="mt-[10px] italic">Stanford University</p>
+                        <ul className='list-[square] list-outside md:list-inside pl-3'>
+                            <li className='md:pl-3'>2025 - School of Engineering Graduate Fellowship</li>
+                        </ul>
+                        
+                        <p className='mt-[5px] italic'>The New York Times</p> 
+                        <ul className='list-[square] list-outside md:list-inside pl-3'>
+                            
+                            <li className='md:pl-3'>2024 - Publisher Award (Games Sponsorships)</li>
+                            <li className='md:pl-3'>2024 - Publisher Award (Cooking Product Development)</li>
+                            <li className='md:pl-3'>2024 - Maker Week Team Project Awarded 'Best Design'</li>
+                            <li className='md:pl-3'>2023 - NYT Advertising Product Development of the Year</li>
+                        </ul>
+
+                        <p className="mt-[10px] italic">Columbia University</p>
+                        <ul className='list-[square] list-outside md:list-inside pl-3'>
+                            <li className='md:pl-3'>2024 - Hsing Fellow</li>
+                            <li className='md:pl-3'>2022 - Dean's List</li>
+                            <li className='md:pl-3'>2020 - Zvi Galil Award, Columbia Organization of Rising Entreprenuers (CORE)</li>
+                            <li className='md:pl-3'>2018 - Dyckman Scholar</li>
+                        </ul>
+                        
+                        <p className="mt-[10px] italic">External</p>
+                        <ul className='list-[square] list-outside md:list-inside pl-3'>
+                            <li className='md:pl-3'>2025 - US/UK Fulbright Postgraduate Study Award</li>
+                            <li className='md:pl-3'>2025, 2018 - Dr. Calvin Martin Memorial Scholar</li>
+                            <li className='md:pl-3'>2025, 2024 - American Institute of Graphic Arts (AIGA) NY Design Fellow</li>
+                            <li className='md:pl-3'>2021 - <a className="underline decoration-blue-500 
+                            underline-offset-[2px] decoration-[2px] hover:font-semibold" 
+                            href="https://www.anddesign.co/fellows-profiles/lord-crawford">Access&_Design Fellow</a></li>
+                        </ul> 
+                    <br/>
 
                     <h2 className="font-extrabold md:text-[18px]">Education</h2>
                     <ul className='list-[square] list-outside md:list-inside pl-3'>
+                        <li>Stanford University - Master of Science, Design (In-Progress)</li>
                         <li>Columbia University - Bachelor of Science, Computer Science</li>
                         <li>Pratt Institute - Digital Product Design Certificate</li>
-                        <li>California College of the Arts - Graphic Design Specialization (Online, In-Progress)</li>
                     </ul> <br/>
 
                     <hr></hr>
