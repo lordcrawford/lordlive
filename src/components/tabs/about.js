@@ -35,19 +35,18 @@ const About = () => {
                 <div className="text-[3.5vw] md:text-[17px] mt-[5%] w-[80%] justify-self-center font-normal font-urbanist">
                     
                     Lord Crawford is a native New Yorker working at the intersection of technology 
-                    and creativity. Currently, as a Design Master's student at Stanford University's 
-                    d.school, he is exploring computer vision, mixed reality, and social computing. 
-                    Lord is dedicated to crafting impactful digital experiences, specifically those 
-                    that can adapt to a user's needs and preferences as it pertains to context, 
+                    and creativity. Currently, as a Design Master's student at Stanford University's <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
+                    href="https://dschool.stanford.edu/directory/lord-crawford">d.school</a>, 
+                    he is exploring graphics, computer vision, and human-AI interaction. 
+                    Lord is dedicated to crafting impactful digital experiences that can 
+                    adapt to a user's needs and preferences as it pertains to context, 
                     demographic, and ability. 
                     <br/><br/>
-                    Prior to joining the d.school, Lord spent three years as a product manager within the media
-                    industry—most recently The New York Times and Twitter—where he designed and built advertising 
-                    products and localization strategies at scale. Notably, at The New York Times, he led the advertising 
-                    experience for <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
-                    href="https://www.lord.live/adsnytgames">NYT Games</a> (Wordle, Connections, Crossword, etc.) 
-                    and <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
-                    href="https://cooking.nytimes.com/">NYT Cooking</a>. 
+                    Before joining the d.school, Lord spent three years as a product manager within the media
+                    industry—most recently at The New York Times and Twitter—where he designed and built advertising 
+                    products and localization strategies at scale. His background in product management deeply 
+                    informs his design practice, grounding his work in user-centered research, technical intuition,
+                     and strategic thinking.
                     <br/><br/>
                     He holds a Bachelor's degree in Computer Science from Columbia University with a 
                     focus on Human-Computer Interaction and completed the Digital Product Design Certificate 
@@ -55,7 +54,7 @@ const About = () => {
                     including a web-based digital audio workstation, virtual reality cooking simulator, 
                     and <a className="underline decoration-blue-500 underline-offset-[2px] decoration-[2px] hover:font-semibold" 
                     href="https://www.lord.live/projects">more</a>. As well, hailing from Washington Heights, New York, Lord is
-                    passionate to serve the Harlem community that nurtured him and is on the Board of Trustees for <a className="underline decoration-blue-500 
+                    passionate about serving the Harlem community that nurtured him and is on the Board of Trustees for <a className="underline decoration-blue-500 
                     underline-offset-[2px] decoration-[2px] hover:font-semibold" href="https://www.sthopeleadershipacademy.org/about/board-of-directors/board-members-biographies/">
                     St. HOPE Leadership Academy</a>.<br/><br/>
                     
